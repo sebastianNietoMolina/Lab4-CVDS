@@ -8,7 +8,7 @@ public class BonusScore{
 	* @param incorrectCount valor de penalizacion -5 puntos.
 	* @return Retorna un numero entre 0 y 100.
 	**/
-	private int calculateScore(int correctCount, int incorrectCount){
+	public int calculateScore(int correctCount, int incorrectCount){
 		return 0;
 	}
 

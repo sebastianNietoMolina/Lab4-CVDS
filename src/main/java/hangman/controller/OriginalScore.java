@@ -8,8 +8,12 @@ public class OriginalScore{
 	* @param incorrectCount valor de penalizacion.
 	* @return Retorna un numero entre 0 y 100.
 	**/
-	public static  int calculateScore(int correctCount, int incorrectCount){
-		return 0;
+	public int calculateScore(int correctCount, int incorrectCount){
+		
+		int puntaje=100;
+		puntaje-=(incorrectCount*10);
+		return puntaje;
 	}
+	
 
 }

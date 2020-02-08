@@ -1,10 +1,14 @@
 package hangman;
 
+import org.junit.Assert;
 import org.junit.Assert.*;
 import org.junit.Test;
 
+
+import hangman.controller.BonusScore;
 import hangman.controller.OriginalScore;
-import junit.framework.Assert;
+
+
 public class GameScoreTest{
 	
 
@@ -14,10 +18,13 @@ public class GameScoreTest{
 	*	valores incorrectos: 0<=incorrectCount<=10
 	* en este caso el inicio=100
 	**/
+
 	@Test
 	public void originalScoreTest(){
-		int valor = OriginalScore.calculateScore(0,10);
+		OriginalScore score=new OriginalScore();
+		int valor = score.calculateScore(0,10);		
 		Assert.assertEquals(valor,0);
+		
 	}
 	
 	/**
