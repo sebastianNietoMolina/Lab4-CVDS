@@ -1,6 +1,6 @@
 package hangman.controller;
 
-public class PowerScore{
+public class PowerScore implements GameScore{
 	
 	/**
 	* @pre debe ingresar dos variables de tipo entero

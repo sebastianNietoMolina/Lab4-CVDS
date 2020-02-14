@@ -1,11 +1,13 @@
 package hangman.setup.factoryMethod;
 
+import hangman.controller.*;
 import hangman.model.English;
 import hangman.model.Language;
 import hangman.model.dictionary.EnglishDictionaryDataSource;
 import hangman.model.dictionary.HangmanDictionary;
 import hangman.view.HangmanPanel;
 import hangman.view.HangmanStickmanPanel;
+
 
 public class HangmanDefaultFactoryMethod extends HangmanFactoryMethod {
     @Override
@@ -22,4 +24,10 @@ public class HangmanDefaultFactoryMethod extends HangmanFactoryMethod {
     public HangmanPanel createHangmanPanel() {
         return new HangmanStickmanPanel();
     }
+
+	@Override
+	public GameScore createOriginalScore() {
+		return new OriginalScore();
+	}
+	
 }

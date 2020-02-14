@@ -1,6 +1,6 @@
 package hangman.controller;
 
-public class BonusScore{
+public class BonusScore implements GameScore{
 	
 	/**
 	* @pre debe ingresar dos variables de tipo entero
