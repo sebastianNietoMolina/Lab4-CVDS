@@ -8,8 +8,20 @@ public class PowerScore{
 	* @param incorrectCount valor de penalizacion -8 puntos.
 	* @return Retorna un numero entre 0 y 500.
 	**/
-	private int calculateScore(int correctCount, int incorrectCount){
-		return 0;
+	public int calculateScore(int correctCount, int incorrectCount){
+		int puntaje=0;
+		for (int i=1; i<=correctCount; i++){
+			puntaje=(int) Math.pow(5,i);
+		}
+		if(puntaje>500){
+			puntaje=500;
+		}
+		puntaje-=(8*incorrectCount);
+		if(puntaje>0){
+			return puntaje;
+		}else{
+			return 0;
+		}
 	}
 
 }

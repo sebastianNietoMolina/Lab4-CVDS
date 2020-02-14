@@ -7,6 +7,7 @@ import org.junit.Test;
 
 import hangman.controller.BonusScore;
 import hangman.controller.OriginalScore;
+import hangman.controller.PowerScore;
 
 
 public class GameScoreTest{
@@ -36,7 +37,8 @@ public class GameScoreTest{
 	**/
 	@Test
 	public void bonusScoreTest(){
-		int valor = BonusScore.calculateScore(10,0);
+		BonusScore score=new BonusScore();
+		int valor = score.calculateScore(10,0);
 		Assert.assertEquals(valor,100);
 		
 	}
@@ -50,7 +52,8 @@ public class GameScoreTest{
 	**/
 	@Test
 	public void powerScoreTest(){
-		int valor = PowerScore.calculateScore(2,1);
+		PowerScore score=new PowerScore();
+		int valor = score.calculateScore(2,1);
 		Assert.assertEquals(valor,17);
 		
 	}
