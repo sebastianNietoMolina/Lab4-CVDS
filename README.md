@@ -2,6 +2,11 @@
 
 ### Procesos de Desarrollo de Software
 
+### Integrantes
+
+	 Sebastian Nieto	
+	 Brayan Burgos
+
 ### Desarrollo Dirigido por Pruebas + DIP + DI + Contenedores Livianos
 
 
